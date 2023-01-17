@@ -3,7 +3,7 @@
 <style>
     .body{
     /* The image used */
-    background-color: black;
+    background-color: white;
     /* Full height */
     height: 100%;
 
@@ -16,7 +16,7 @@
 <body class ="body">
     {%for category_list in category%}
     <div class = "container">
-        <h2 class="display-3" style = "color:white">{{category_list.category}}</h2>
+        <h2 class="display-3" styles = "color:white">{{category_list.category}}</h2>
         <div class = "row g-3">
             {% for video_list in catalogue%}
             {% if category_list.category == video_list.video.category%}
